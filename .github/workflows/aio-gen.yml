@@ -1,0 +1,9 @@
+on: workflow_dispatch
+jobs:
+  issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: close the pull request
+        uses: geromegrignon/ng-aio-gen@v1.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
