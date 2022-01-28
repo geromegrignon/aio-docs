@@ -4,6 +4,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: close the pull request
-        uses: geromegrignon/ng-aio-gen@v1.7
+        uses: geromegrignon/ng-aio-gen@v1.8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
