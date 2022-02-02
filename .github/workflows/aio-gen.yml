@@ -4,10 +4,10 @@ on:
   schedule:
     - cron: '15 2 * * *'
 jobs:
-  issues:
+  commits:
     runs-on: ubuntu-latest
     steps:
-      - name: close the pull request
+      - name: get commits
         uses: geromegrignon/ng-aio-gen@v1.15
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
